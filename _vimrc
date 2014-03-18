@@ -1,6 +1,8 @@
 set nocompatible
 "plugin manager
 execute pathogen#infect()
+colorscheme ir_black
+set guifont=mingliu:h12
 syntax on
 filetype plugin indent on
 
@@ -47,6 +49,13 @@ set autochdir
     let Tlist_Ctags_Cmd='D:\\ProgramFiles\\vim\\vim74\\ctags'  "设置ctags命令的位置
     nnoremap <leader>tl : Tlist<CR>        "设置关闭和打开taglist窗口的快捷键
     "}
+
+"powerline{
+ set guifont=PowerlineSymbols\ for\ Powerline
+ set nocompatible
+ set t_Co=256
+ let g:Powerline_symbols = 'fancy'
+ "}
 
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
